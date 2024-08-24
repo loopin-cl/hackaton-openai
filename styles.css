@@ -32,9 +32,10 @@ body{
 
 h1{
     font-family: var(--tipografia);
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     color: var(--text-color);
+    margin: 0;
 }
 
 .main-cta{
@@ -53,6 +54,6 @@ h1{
 
 .chat-bubble{
     background: linear-gradient(136deg, #FED878 26.24%, #9B7AFD 100%);
-    padding: 16px;
+    padding: 20px;
     border-radius: 2px 16px 16px 16px;
 }

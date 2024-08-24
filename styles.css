@@ -49,8 +49,9 @@ p{
     height: 40px;
     width: fit-content;
     border-radius: 20px;
-    border:none;
+    border: none;
     background-color: var(--naranjo);
     color: var(--naranjo-9);
     cursor: pointer;
+    font-size: 16px;
 }

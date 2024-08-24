@@ -53,7 +53,7 @@
       }
 
       const json = await response.json();
-      document.querySelector('#response-container').innerHTML = response.message
+      document.querySelector('#response-container').innerHTML = json.message
     } catch (error) {
       console.error(error.message);
     }

@@ -59,7 +59,12 @@ h1{
     width: 70%;
 }
 
-input#file-upload-button{
+form#uploadForm{
+    text-align: right;
+}
+
+
+/*input#file-upload-button{
     margin: auto;
     padding: 8px 16px;
     height: 40px;
@@ -70,4 +75,4 @@ input#file-upload-button{
     color: #145697;
     cursor: pointer;
     font-size: 16px;
-}
+}*/

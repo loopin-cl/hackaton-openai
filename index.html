@@ -28,12 +28,14 @@
                     <h1>Hola! Soy Loopie, muestrame una imagen y contaré las botellas que Loopin retirará en tu domicilio</h1> 
                 </div>
 
-                <button class="main-cta">Carga tu imagen</button>
+                <form id="uploadForm">
+                    <label for="imagen">Selecciona una imagen:</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                    <br><br>
+                    <button type="submit">Subir Imagen</button>
+                </form>
 
-                <section>
-                    <button onclick="getData()">Fetch data</button>
-                    <div id="api-response"></div>
-                </section>
+                <button class="main-cta">Carga tu imagen</button>
 
                 <div id="response-container">
                     
@@ -42,6 +44,27 @@
         </div>
     </main>
 </body>
+
+<script>
+    document.getElementById('uploadForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+
+        const form = document.getElementById('uploadForm');
+        const formData = new FormData(form); // Crea un objeto FormData con los datos del formulario
+
+        fetch('https://gfinjd0r9e.execute-api.us-east-1.amazonaws.com/default/hackaton-openai', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json()) // Procesa la respuesta como JSON
+        .then(data => {
+            document.getElementById('response-container').innerText = JSON.stringify(data, null, 2);
+        })
+        .catch(error => {
+            document.getElementById('response-container').innerText = 'Error: ' + error;
+        });
+    });
+</script>
 
 <script>
   async function getData() {

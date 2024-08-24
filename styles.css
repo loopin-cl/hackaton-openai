@@ -58,3 +58,16 @@ h1{
     border-radius: 2px 24px 24px 24px;
     width: 70%;
 }
+
+input#file-upload-button{
+    margin: auto;
+    padding: 8px 16px;
+    height: 40px;
+    width: fit-content;
+    border-radius: 20px;
+    border: none;
+    background-color: #E9F4FF;
+    color: #145697;
+    cursor: pointer;
+    font-size: 16px;
+}

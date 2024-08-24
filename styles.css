@@ -32,13 +32,8 @@ body{
 
 h1{
     font-family: var(--tipografia);
-    font-size: 32px;
-    color: var(--text-color);
-}
-
-p{
-    font-family: var(--tipografia);
-    font-size: 16px;
+    font-size: 28px;
+    font-weight: 500;
     color: var(--text-color);
 }
 
@@ -54,4 +49,10 @@ p{
     color: var(--naranjo-9);
     cursor: pointer;
     font-size: 16px;
+}
+
+.chat-bubble{
+    background: linear-gradient(136deg, #FED878 26.24%, #9B7AFD 100%);
+    padding: 16px;
+    border-radius: 2px 16px 16px 16px;
 }

@@ -58,27 +58,10 @@
         })
         .then(response => response.json()) // Procesa la respuesta como JSON
         .then(data => {
-            document.getElementById('response-container').innerText = JSON.stringify(data, null, 2);
+            document.getElementById('response-container').innerText = data.message;
         })
         .catch(error => {
             document.getElementById('response-container').innerText = 'Error: ' + error;
         });
     });
-</script>
-
-<script>
-  async function getData() {
-    const url = "https://gfinjd0r9e.execute-api.us-east-1.amazonaws.com/default/hackaton-openai";
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`Response status: ${response.status}`);
-      }
-
-      const json = await response.json();
-      document.querySelector('#response-container').innerHTML = json.message
-    } catch (error) {
-      console.error(error.message);
-    }
-  }
 </script>

@@ -25,7 +25,9 @@ body{
 }
 
 .loopie{
-    height: 30% 
+    height: 48vh;
+    margin: auto;
+    padding:48px;
 }
 
 h1{
@@ -42,6 +44,7 @@ p{
 
 .main-cta{
     margin: auto;
+    margin-top: 48px;
     padding: 8px 16px;
     height: 40px;
     width: fit-content;

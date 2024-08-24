@@ -13,11 +13,11 @@ body{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    padding: 2% 5%;
 }
 
 .main-container{
     width: 100%;
-    padding: 2% 5%;
 }
 
 .logo{
@@ -25,14 +25,14 @@ body{
 }
 
 .loopie{
-    height: 48vh;
+    height: 30vh;
     margin: auto;
     padding:48px;
 }
 
 h1{
     font-family: var(--tipografia);
-    font-size: 48px;
+    font-size: 32px;
     color: var(--text-color);
 }
 

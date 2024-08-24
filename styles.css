@@ -1,4 +1,6 @@
 body{
+    width: 100%;
+    overflow: auto;
     background-color: #F7F7F7;
 }
 

@@ -1,9 +1,11 @@
 :root{
     --naranjo: #FE7E1E;
+    --naranjo-9: #331906;
     --azul: #228FFC;
     --mostaza: #FEBE1E;
     --morado: #5922FC;
     --tipografia: "DM Sans", sans-serif; 
+    --text-color: #303030;
 }
 
 body{
@@ -25,11 +27,13 @@ body{
 h1{
     font-family: var(--tipografia);
     font-size: 48px;
+    color: var(--text-color);
 }
 
 p{
     font-family: var(--tipografia);
     font-size: 16px;
+    color: var(--text-color);
 }
 
 .main-cta{
@@ -40,5 +44,6 @@ p{
     border-radius: 20px;
     border:none;
     background-color: var(--naranjo);
-    color: black;
+    color: var(--naranjo-9);
+    cursor: pointer;
 }

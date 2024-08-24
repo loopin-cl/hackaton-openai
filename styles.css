@@ -1,6 +1,9 @@
 :root{
-    --naranjo-primario: #FE7E1E;
-    --font-family: "DM Sans", sans-serif; 
+    --naranjo: #FE7E1E;
+    --azul: #228FFC;
+    --mostaza: #FEBE1E;
+    --morado: #5922FC;
+    --tipografia: "DM Sans", sans-serif; 
 }
 
 body{
@@ -11,7 +14,7 @@ body{
     width: 100%;
     padding: 2% 5%;
     overflow: auto;
-    background-color: #F7F7F7;
+   /*background-color: #F7F7F7;*/
 }
 
 .logo{
@@ -19,12 +22,12 @@ body{
 }
 
 h1{
-    font-family: var(--font-family);
+    font-family: var(--tipografia);
     font-size: 48px;
 }
 
 p{
-    font-family: var(--font-family);
+    font-family: var(--tipografia);
     font-size: 16px;
 }
 
@@ -33,5 +36,5 @@ p{
     max-height: 48px;
     width: fit-content;
     border-radius: 100%;
-    color: var(--naranjo-primario) ;
+    color: var(--naranjo) ;
 }

@@ -122,22 +122,33 @@ input[type="file"] {
     display: none;
 }
 
-.selector-img-custom{
-    padding: 8px 16px;
-    width: fit-content;
-    border-radius: 20px;
-    border: none;
-    background-color: #FFF;
-    border: 1px solid var(--azul-3);
-    color: var(--azul-7);
-    cursor: pointer;
-    font-size: 16px;
-}
+.img-selector-container{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
 
-#file-name{
-    font-family: var(--tipografia);
-    color: var(--text-color);
-    font-size: 12px;
+    .selector-img-custom{
+        display: flex;
+        flex-direction: row;
+        padding: 8px 16px;
+        background-color: #FFF;
+        width: fit-content;
+        border-radius: 20px;
+        border: 1px solid var(--azul-3);
+        color: var(--azul-7);
+        cursor: pointer;
+        font-size: 16px;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px;
+
+    }
+    
+    #file-name{
+        font-family: var(--tipografia);
+        color: var(--text-color);
+        font-size: 12px;
+    }
 }
 
 #response-container{

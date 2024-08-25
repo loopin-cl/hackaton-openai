@@ -89,6 +89,7 @@ label{
     flex-wrap: nowrap;
     align-content: flex-end;
     align-items: flex-end;
+    gap: 16px;
 }
 
 input[type="file"] {
@@ -96,19 +97,19 @@ input[type="file"] {
 }
 
 .selector-img-custom{
-    margin: auto;
     padding: 8px 16px;
-    height: 40px;
     width: fit-content;
     border-radius: 20px;
     border: none;
-    background-color: #E9F4FF;
-    color: #145697;
+    background-color: #FFF;
+    border-color: var(--azul);
+    color: var(--azul);
     cursor: pointer;
     font-size: 16px;
 }
 
 #file-name{
     font-family: var(--tipografia);
-    font-size: 10px;
+    color: var(--azul);
+    font-size: 12px;
 }

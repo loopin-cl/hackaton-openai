@@ -45,6 +45,7 @@ body{
         color: var(--text-color);
         font-family: var(--tipografia);
         font-size: 16px;
+        font-weight: 500;
     }
 }
 
@@ -101,7 +102,7 @@ label{
 .chat-bubble.user{
     font-family: var(--tipografia);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     align-self: flex-end;
     background: #A7D2FE;
     text-align: right;

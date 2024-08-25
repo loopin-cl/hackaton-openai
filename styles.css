@@ -25,7 +25,7 @@ body{
 }
 
 .header{
-    width: 100%;
+    width: auto;
     padding: 8px 24px;
     background-color: #FAFAFA;
     display: flex;
@@ -103,7 +103,7 @@ label{
     font-size: 16px;
     font-weight: 500;
     align-self: flex-end;
-    background: var(--azul-0);
+    background: #A7D2FE;
     text-align: right;
     padding: 24px;
     border-radius: 24px 2px 24px 24px;
@@ -134,6 +134,6 @@ input[type="file"] {
 
 #file-name{
     font-family: var(--tipografia);
-    color: var(--azul-7);
+    color: var(--text-color);
     font-size: 12px;
 }

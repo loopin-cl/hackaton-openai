@@ -75,6 +75,9 @@ label{
 }
 
 .chat-bubble.user{
+    font-family: var(--tipografia);
+    font-size: 20px;
+    font-weight: 500;
     align-self: flex-end;
     background: var(--azul-0);
     text-align: right;
@@ -88,7 +91,11 @@ label{
     align-items: flex-end;
 }
 
-/*input#file-upload-button{
+input[type="file"] {
+    display: none;
+}
+
+.selector-img-custom{
     margin: auto;
     padding: 8px 16px;
     height: 40px;
@@ -99,4 +106,9 @@ label{
     color: #145697;
     cursor: pointer;
     font-size: 16px;
-}*/
+}
+
+#file-name{
+    font-family: var(--tipografia);
+    font-size: 10px;
+}

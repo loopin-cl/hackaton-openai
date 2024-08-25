@@ -30,8 +30,9 @@
                     </div>
 
                     <form id="uploadForm" class="chat-bubble user">
-                        <label for="imagen">Usa la siguiente imagen</label>
+                        <label for="imagen" class="selector-img-custom">Usa la siguiente imagen</label>
                         <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                        <span id="file-name">Ningún archivo seleccionado</span>
                         <button type="submit" class="main-cta">Subir Imagen</button>
                     </form>
 
@@ -61,5 +62,10 @@
         .catch(error => {
             document.getElementById('response-container').innerText = 'Error: ' + error;
         });
+    });
+
+    document.getElementById('imagen').addEventListener('change', function() {
+    const fileName = this.files.length > 0 ? this.files[0].name : "Ningún archivo seleccionado";
+    document.getElementById('file-name').textContent = fileName;
     });
 </script>

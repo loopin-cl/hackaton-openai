@@ -22,11 +22,11 @@ body{
 
 .main-container{
     width: auto;
-    margin: 2% 24px;
+    margin: 20% 24px 5%;;
 }
 
 .header{
-    width: auto;
+    width: 100%;
     padding: 8px 24px;
     background-color: #FAFAFA;
     display: flex;
@@ -34,6 +34,9 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     .material-symbols-outlined{
         color: var(--text-color);

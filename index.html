@@ -75,13 +75,14 @@
         .then(response => response.json()) // Procesa la respuesta como JSON
         .then(data => {
             document.getElementById('response-container').innerText = data.message;
+            console.log(data);
             
             // Mostrar el div cuando se recibe la respuesta
             document.getElementById('response-container').style.display = 'block';
         })
         .catch(error => {
             document.getElementById('response-container').innerText = 'Error: ' + error;
-           
+            
             // Mostrar el div con el error
             document.getElementById('response-container').style.display = 'block';
         });

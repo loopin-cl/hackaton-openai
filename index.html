@@ -36,10 +36,19 @@
                     </div>
 
                     <form id="uploadForm" class="chat-bubble user">
-                        <label for="imagen" class="selector-img-custom">Escoge una imagen</label>
+                        <label for="imagen" class="selector-img-custom">
+                            <span class="material-symbols-outlined">
+                                add_photo_alternate
+                                </span>
+                            Selecciona una imagen
+                        </label>
                         <input type="file" id="imagen" name="imagen" accept="image/*" required>
                         <span id="file-name">Ningún archivo seleccionado</span>
-                        <button type="submit" class="main-cta">Subir Imagen</button>
+                        <button type="submit" class="main-cta">
+                            <span class="material-symbols-outlined">
+                            send
+                            </span>
+                        </button>
                     </form>
 
                     <div class="chat-bubble bot" id="response-container">
@@ -65,13 +74,13 @@
         .then(data => {
             document.getElementById('response-container').innerText = data.message;
             
-            // Hacemos visible el div cuando se recibe la respuesta
+            // Mostrar el div cuando se recibe la respuesta
             document.getElementById('response-container').style.display = 'block';
         })
         .catch(error => {
             document.getElementById('response-container').innerText = 'Error: ' + error;
            
-            // También hacemos visible el div para mostrar el error
+            // Mostrar el div con el error
             document.getElementById('response-container').style.display = 'block';
         });
     });

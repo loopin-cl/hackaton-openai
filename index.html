@@ -25,17 +25,17 @@
                 <img src="assets/loopie-sm-2.svg" class="loopie">
                 
                 <div class="chat-container">
-                    <div class="chat-bubble">
+                    <div class="chat-bubble bot">
                         <h1>Hola! Soy Loopie, muestrame una imagen y contaré las botellas que Loopin retirará en tu domicilio</h1> 
                     </div>
 
-                    <form id="uploadForm">
+                    <form id="uploadForm" class="chat-bubble user">
                         <label for="imagen">Selecciona una imagen:</label>
                         <input type="file" id="imagen" name="imagen" accept="image/*" required>
                         <button type="submit" class="main-cta">Subir Imagen</button>
                     </form>
 
-                    <div class="chat-bubble" id="response-container">
+                    <div class="chat-bubble bot" id="response-container">
                 </div>
                 </div>
             </div>

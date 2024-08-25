@@ -59,17 +59,20 @@ h1{
     flex-wrap: nowrap;
 }
 
-.chat-bubble{
+.chat-bubble.bot{
     background: linear-gradient(136deg, #FED878 18.31%, #FE984B 74.59%);    
     padding: 24px;
     border-radius: 2px 24px 24px 24px;
     width: 70%;
 }
 
-form#uploadForm{
+.chat-bubble.user{
+    float: right;
     text-align: right;
+    padding: 24px;
+    border-radius: 24px 2px 24px 24px;
+    width: 70%;
 }
-
 
 /*input#file-upload-button{
     margin: auto;

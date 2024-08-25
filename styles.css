@@ -3,6 +3,7 @@
     --naranjo-9: #331906;
     --azul: #228FFC;
     --azul-0: #E9F4FF;
+    --azul-3: #7ABCFD;
     --azul-7: #145697;
     --mostaza: #FEBE1E;
     --morado: #5922FC;
@@ -103,7 +104,7 @@ input[type="file"] {
     border-radius: 20px;
     border: none;
     background-color: #FFF;
-    border: 1px solid var(--azul-7);
+    border: 1px solid var(--azul-3);
     color: var(--azul-7);
     cursor: pointer;
     font-size: 16px;

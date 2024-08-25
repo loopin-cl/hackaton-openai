@@ -23,8 +23,23 @@ body{
     width: 100%;
 }
 
-.logo{
-    height: 50px;
+.header{
+    width: 100%;
+    padding: 8px 24px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+
+    .material-symbols-outlined{
+        color: var(--text-color);
+        size: 24px;
+    }
+
+    p{
+        color: var(--text-color);
+        font-family: var(--tipografia);
+        font-size: 16px;
+    }
 }
 
 .loopie{

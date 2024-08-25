@@ -72,12 +72,21 @@
         const form = document.getElementById('uploadForm');
         const formData = new FormData(form); // Crea un objeto FormData con los datos del formulario
 
+        // Muestra el loader y oculta la respuesta mientras se espera la respuesta del servidor
+         document.getElementById('loader').style.display = 'block';
+         document.getElementById('response-container').style.display = 'none';
+
+
         fetch('https://gfinjd0r9e.execute-api.us-east-1.amazonaws.com/default/hackaton-openai', {
             method: 'POST',
             body: formData
         })
         .then(response => response.json()) // Procesa la respuesta como JSON
         .then(data => {
+
+            // Oculta el loader cuando se recibe la respuesta
+            document.getElementById('loader').style.display = 'none';
+
             document.getElementById('response-container').innerText = data.message;
             console.log(data);
             
@@ -85,6 +94,9 @@
             document.getElementById('response-container').style.display = 'block';
         })
         .catch(error => {
+            // Oculta el loader en caso de error
+            document.getElementById('loader').style.display = 'none';
+
             document.getElementById('response-container').innerText = 'Error: ' + error;
            
             // Mostrar el div con el error

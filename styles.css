@@ -159,6 +159,9 @@ input[type="file"] {
     display: none;
 }
 
+#loader{
+    display: none;
+}
 
 /*Loader*/
 .loader {

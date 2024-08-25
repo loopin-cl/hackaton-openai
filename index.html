@@ -32,7 +32,7 @@
                 
                 <div class="chat-container">
                     <div class="chat-bubble bot">
-                        <h1>Hola! Soy Loopie, muestrame una imagen y contaré las botellas que Loopin retirará en tu domicilio</h1> 
+                        <h1>¡Hola! Soy Loopie ✌️, muéstrame una imagen y contaré las botellas que Loopin retirará en tu domicilio</h1> 
                     </div>
 
                     <form id="uploadForm" class="chat-bubble user">
@@ -64,9 +64,15 @@
         .then(response => response.json()) // Procesa la respuesta como JSON
         .then(data => {
             document.getElementById('response-container').innerText = data.message;
+            
+            // Hacemos visible el div cuando se recibe la respuesta
+            document.getElementById('response-container').style.display = 'block';
         })
         .catch(error => {
             document.getElementById('response-container').innerText = 'Error: ' + error;
+           
+            // También hacemos visible el div para mostrar el error
+            document.getElementById('response-container').style.display = 'block';
         });
     });
 

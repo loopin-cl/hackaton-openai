@@ -20,7 +20,7 @@ body{
 
 .main-container{
     width: 100%;
-    margin: 2% 5%;
+    margin: 2% 24px;
 }
 
 .header{
@@ -29,10 +29,15 @@ body{
     background-color: #FAFAFA;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 
     .material-symbols-outlined{
         color: var(--text-color);
-        size: 24px;
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
     }
 
     p{
@@ -43,16 +48,17 @@ body{
 }
 
 .loopie{
-    width: 100px;
+    width: 120px;
     height: auto;
     margin: auto;
-    padding:48px 16px 24px;
+    padding: 24px 0px;
 }
 
 h1{
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
+    margin: 0;
 }
 
 label{

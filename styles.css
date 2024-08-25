@@ -17,6 +17,7 @@ body{
     overflow-x: hidden;
     overflow-y: auto;
     margin: 0;
+    background-color: #F7F7F7;
 }
 
 .main-container{

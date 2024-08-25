@@ -165,9 +165,9 @@ input[type="file"] {
 
 /*Loader*/
 .loader {
-    width: 60px;
+    width: 50px;
     aspect-ratio: 2;
-    --_g: no-repeat radial-gradient(circle closest-side,#FE7E1E 90%,#5922FC);
+    --_g: no-repeat radial-gradient(circle closest-side,#FE7E1E 90%,#000);
     background: 
       var(--_g) 0%   50%,
       var(--_g) 50%  50%,

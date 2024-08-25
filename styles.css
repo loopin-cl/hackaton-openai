@@ -52,6 +52,13 @@ h1{
     font-size: 16px;
 }
 
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-wrap: nowrap;
+}
+
 .chat-bubble{
     background: linear-gradient(136deg, #FED878 18.31%, #FE984B 74.59%);    
     padding: 24px;
